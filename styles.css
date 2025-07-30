@@ -1,0 +1,113 @@
+html, body {
+    min-height: 100vh;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    background: #8300bf;
+    background: linear-gradient(180deg,rgba(131, 0, 191, 1) 0%, rgba(255, 64, 0, 1) 65%, rgba(255, 149, 0, 1) 100%);
+    background-attachment: fixed;
+}
+
+.titulo-container {
+    position: relative;
+    top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    font-family: 'Bobby Jones', sans-serif;
+    letter-spacing: -0.03em;
+    position: relative;
+    font-size: 15vw;
+    color: #ffffff;
+    text-align: center;
+}
+.logo {
+    position: relative;
+    width: 20vw;
+    height: auto;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadrado {
+    position: absolute;
+    top: 80vh;
+    left: -10vw;
+    width: 50vw;
+    height: 20vw;
+    background-color: #380d8d;
+    transform: rotate(26deg);
+}
+.cuadrado.dos {
+    top: 80vh;
+    left: -10vw;
+    width: 50vw;
+    height: 20vw;
+    background-color: #5e17eb;
+    z-index: -1;
+    transform: rotate(26deg);
+}
+.cuadrado.uno {
+    top: 90vh;
+    left: -10vw;
+    width: 50vw;
+    height: 20vw;
+    background-color: #380d8d;
+    transform: rotate(26deg);
+}
+
+.cuadrado.uno.scrolled, .cuadrado.dos.scrolled {
+    left: -60vw;
+    top: 120vh;
+}
+
+.cuadrado.tres {
+    top: -20vh;
+    right: -10vw;
+    left: auto;
+    width: 50vw;
+    height: 20vw;
+    background-color: #380d8d;
+    z-index: -1;
+    transform: scaleX(-1) scaleY(-1) rotate(26deg);
+}
+
+.cuadrado.cuatro {
+    top: -15vh;
+    right: -10vw;
+    left: auto;
+    width: 60vw;
+    height: 20vw;
+    background-color: #5e17eb;
+    z-index: -2;
+    transform: scaleX(-1) scaleY(-1) rotate(26deg);
+}
+
+
+@font-face {
+    font-family: 'Overway';
+    src: url('fonts/Overway.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bobby Jones';
+    src: url('fonts/bobby-jones.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
