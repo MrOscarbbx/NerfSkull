@@ -248,7 +248,7 @@ body {
     height: 60vh;
     background-image: url('img/image.png');
     background-size: cover;
-    background-position: center
+    background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
@@ -272,6 +272,118 @@ body {
     align-items: center;
     z-index: 1;
 }
+
+@media screen and (max-width: 600px) {
+    html {
+        overflow-x: hidden;
+        min-height: 100vh;
+        height: 100%;
+    }
+    header {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .titulo-container {
+        flex-direction: column;
+    }
+    .titulo {
+        font-size: 30vw;
+        margin: -5vh 0 0;
+    }
+    .triangulos {
+        width: 50vw;
+        top: -10vh;
+        left: -5vw;
+    }
+    .artista-container {
+        height: 90vh;
+    }
+    
+    .codigo {
+        width: 80vw;
+        right: 10vw;
+    }
+    .logo {
+        width: 70vw;
+    }
+    .codigo {
+        width: 40vw;
+        right: 10vw;
+    }
+    .artista {
+        font-size: 20vw;
+        margin-bottom: -5vh;
+    }
+    .puntos {
+        width: 80vw;
+        top : 0vh;
+        height: auto;
+    }
+    .texto {
+        font-size: 4vw;
+        width: 90vw;
+    }
+    .puntos {
+        width: 60vw;
+    }
+    .imagenuno {
+        bottom: 0!important;
+        width: 60vw;
+        top: initial;
+        height: 40vh !important;
+        background-size: 140vw;
+    }
+    .imagendos {
+        width: 100vw;
+        height: 50vh;
+        background-size: 80vw;
+        background-repeat: no-repeat;
+        background-position: top 10vh left -20vw;
+    }
+    .twitch-container {
+        top: 0vh;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-twitch {
+        font-size: 3vw;
+        width: 80vw;
+        top: -15vh;
+    }
+    .texto.instagram.twitch {
+        width: 20vw;
+        margin-right: 0;
+    }
+    .twitch-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100vw;
+        flex-direction: row!important;
+    }
+    .streamer {
+        font-size: 18vw;
+        top: -10vh;
+    }
+    .instagram-container2 {
+        top: -18vh!important;
+        left: 48vw;
+    }
+    .imagentres {
+        width: 100vw;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        bottom: -10vh;
+        right: 0;
+    }
+}
+
 
 @font-face {
     font-family: 'Overway';
