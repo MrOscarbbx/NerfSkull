@@ -18,7 +18,7 @@ window.addEventListener('scroll', function () {
     }
 
     if (codigo) {
-        if (scrollY > 50) {
+        if (scrollY > 30) {
             codigo.classList.add('hide');
         } else {
             codigo.classList.remove('hide');
@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         });
     }, {
-        threshold: 0.4
+        threshold: 0.21
     });
     fadeEls.forEach(el => observer.observe(el));
 });
