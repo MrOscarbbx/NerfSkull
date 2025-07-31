@@ -46,38 +46,6 @@ body {
     opacity: 0;
 }
 
-.artista-container {
-    position: relative;
-    width: 100%;
-    height: 120vh;
-    display: flow-root;
-}
-.artista {
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    margin-left: 6vw;
-    font-size: 14vw;
-    color: #ffffff;
-    margin-bottom: -10vh;
-}
-
-.texto {
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    margin-left: 6vw;
-    font-size: 2vw;
-    color: #ffffff;
-    width: 60vw;
-}
-
-.puntos {
-    position: absolute;
-    top: 20vh;
-    left: 0;
-    width: 40vw;
-    height: auto;
-}
-
 .titulo-container {
     position: relative;
     top: 10vh;
@@ -124,7 +92,7 @@ body {
     width: 50vw;
     height: 20vw;
     background-color: #5e17eb;
-    z-index: -1;
+    z-index: -2;
     transform: rotate(26deg);
 }
 .cuadrado.uno {
@@ -134,6 +102,7 @@ body {
     height: 20vw;
     background-color: #380d8d;
     transform: rotate(26deg);
+    z-index: -1;
 }
 
 .cuadrado.uno.scrolled, .cuadrado.dos.scrolled {
@@ -163,6 +132,146 @@ body {
     transform: scaleX(-1) scaleY(-1) rotate(26deg);
 }
 
+
+.artista-container {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    display: flow-root;
+    overflow: hidden;
+}
+.artista {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin-left: 6vw;
+    font-size: 14vw;
+    color: #ffffff;
+    margin-bottom: -10vh;
+}
+
+.texto {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin-left: 6vw;
+    font-size: 2vw;
+    color: #ffffff;
+    width: 60vw;
+}
+
+.puntos {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    width: 40vw;
+    height: auto;
+}
+
+.instagram-container {
+    position: relative;
+    padding: 0;
+    left: 6vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.instagram {
+    margin-left: 1vw;
+}
+
+.logo-instagram {
+    position: relative;
+    width: 5vw;
+    height: auto;
+}
+
+.imagenuno {
+    position: absolute;
+    top: 20vh;
+    right: 0;
+    width: 30vw;
+    height: 110vh;
+    background-image: url('img/DibujoSaul1.jpg');
+    background-size: 100vw 110vh;
+    background-position: right -25vw top 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+}
+.imagendos {
+    position: absolute;
+    bottom: -10vh;
+    left: 0;
+    width: 80vw;
+    height: 40vh;
+    background-image: url('img/ImagenSaul2.jpg');
+    background-position: top -40vh left -20vw;
+    z-index: -1;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.twitch-container {
+    position: relative;
+    top: -5vh;
+    padding: 0;
+    left: 5vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.streamer {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    position: relative;
+    font-size: 15vw;
+}
+.twitch {
+    width: 15vw;
+    margin-right: 1vw;
+    font-size: 5vw
+}
+.texto-twitch {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    top: -40vh;
+    position: relative;
+    font-size: 1.5vw;
+    width: 35vw;
+}
+.imagentres {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60vw;
+    height: 60vh;
+    background-image: url('img/image.png');
+    background-size: cover;
+    background-position: center
+    background-repeat: no-repeat;
+    overflow: hidden;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.cuadros-twitch1 {
+    top:110vh !important;
+}
+.cuadros-twitch2 {
+    top:100vh !important;
+}
+
+.instagram-container2{
+    position: relative;
+    padding: 0;
+    top: -40vh!important;
+    left: 18vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
 
 @font-face {
     font-family: 'Overway';
