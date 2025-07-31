@@ -5,6 +5,7 @@ window.addEventListener('scroll', function () {
 
     const cuadradoUno = document.querySelector('.cuadrado.uno');
     const cuadradoDos = document.querySelector('.cuadrado.dos');
+    const codigo = document.querySelector('.codigo');
 
     if (cuadradoUno) {
         cuadradoUno.style.transform = `rotate(26deg) translateX(-${progress * 250}vw) scale(${1 + progress * 0.2})`;
@@ -15,4 +16,28 @@ window.addEventListener('scroll', function () {
         cuadradoDos.style.transform = `rotate(26deg) translateX(-${progress * 250}vw) scale(${1 + progress * 0.2})`;
         cuadradoDos.style.opacity = `${1 - progress * 0.5}`;
     }
+
+    if (codigo) {
+        if (scrollY > 50) {
+            codigo.classList.add('hide');
+        } else {
+            codigo.classList.remove('hide');
+        }
+    }
+});
+
+window.addEventListener('DOMContentLoaded', function () {
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new window.IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, {
+        threshold: 0.4
+    });
+    fadeEls.forEach(el => observer.observe(el));
 });
