@@ -240,6 +240,12 @@ body {
     font-size: 1.5vw;
     width: 35vw;
 }
+.twitch-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Esto lo lleva a la derecha */
+    flex-direction: row!important;
+}
 .imagentres {
     position: absolute;
     bottom: 0;
