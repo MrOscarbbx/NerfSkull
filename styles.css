@@ -413,10 +413,7 @@ body {
     src: url('fonts/Poppins-Regular.ttf') format('truetype');
 }
 
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-350px * 7)); }
-}
+
 
 .slider {
   position: relative;
@@ -430,7 +427,6 @@ body {
   display: flex;
   width: calc(350px * 14);
   height: 80vh;
-  animation: scroll 40s linear infinite;
 }
 
 .slide {
