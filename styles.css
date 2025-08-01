@@ -390,7 +390,17 @@ body {
     }
     .slider {
         margin-bottom: 1vh!important;
-        width: 90vw;
+        width: 30vw;
+        height: 40vh;
+    }
+    .slide-track {
+        width: calc(200px * 14);
+        margin: 15vh;
+        height: 10vh!important;
+    }
+    .slide {
+        width: 200px!important;
+        transform-style: preserve-3d;
     }
 }
 
