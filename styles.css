@@ -205,7 +205,7 @@ body {
     width: 80vw;
     height: 40vh;
     background-image: url('img/ImagenSaul2.jpg');
-    background-position: top -40vh left -20vw;
+    background-position: top -56vh left -20vw;
     z-index: -1;
     clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
 
@@ -278,12 +278,25 @@ body {
     align-items: center;
     z-index: 1;
 }
+.texto-slider {
+    position: absolute;
+    right: 1vw;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 3vw;
+    z-index: 2;
+}
 
 @media screen and (max-width: 600px) {
     html {
         overflow-x: hidden;
         min-height: 100vh;
         height: 100%;
+    }
+    .espacio {
+        display: none;
     }
     header {
         position: relative;
@@ -295,7 +308,7 @@ body {
         flex-direction: column;
     }
     .titulo {
-        font-size: 30vw;
+        font-size: 25vw;
         margin: -5vh 0 0;
     }
     .triangulos {
@@ -389,7 +402,7 @@ body {
         right: 0;
     }
     .slider {
-        margin-bottom: 1vh!important;
+        margin-bottom: 0vh!important;
         width: 30vw;
         height: 40vh;
     }
@@ -401,6 +414,16 @@ body {
     .slide {
         width: 200px!important;
         transform-style: preserve-3d;
+    }
+    .texto-slider {
+        position: absolute;
+        top: 0vh;
+        width: 100%;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        font-size: 15vw;
+        z-index: 2;
     }
 }
 
