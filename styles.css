@@ -415,6 +415,7 @@ body {
         transform-style: preserve-3d;
     }
     .texto-slider {
+        display: none;
         position: absolute;
         top: 0vh;
         width: 100%;
