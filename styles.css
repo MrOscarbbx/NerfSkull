@@ -65,8 +65,9 @@ body {
 }
 .logo {
     position: relative;
-    width: 20vw;
+    width: 15vw;
     height: auto;
+    margin: 2vw;
 }
 .header {
     position: relative;
