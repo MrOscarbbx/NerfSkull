@@ -65,9 +65,8 @@ body {
 }
 .logo {
     position: relative;
-    width: 15vw;
+    width: 20vw;
     height: auto;
-    margin: 2vw;
 }
 .header {
     position: relative;
@@ -305,7 +304,9 @@ body {
         height: 100vh;
     }
     .logo {
-        width: 50vw!important;
+        width: 80vw!important;
+        margin: -5vw!important;
+        margin-top: -8vh!important;
     }
     .titulo-container {
         flex-direction: column;
