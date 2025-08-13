@@ -304,6 +304,9 @@ body {
         overflow: hidden;
         height: 100vh;
     }
+    .logo {
+        width: 50vw!important;
+    }
     .titulo-container {
         flex-direction: column;
     }
@@ -322,10 +325,13 @@ body {
     
     .codigo {
         width: 80vw;
+        bottom: 1vh!important;
         right: 10vw;
     }
     .logo {
         width: 70vw;
+        margin-top: 1vh;
+        margin-bottom: 4vh;
     }
     .codigo {
         width: 40vw;
